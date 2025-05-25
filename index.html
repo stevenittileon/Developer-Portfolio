@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#8a2be2">
+    <meta name="msapplication-TileColor" content="#121212">
+    <meta name="theme-color" content="#121212">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +19,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -34,8 +43,7 @@
         <div class="hero-content">
             <div class="profile-container">
                 <div class="profile-photo">
-                    <!-- Add your profile photo here -->
-                    <img src="1000107070.jpg" alt="Your Name" class="profile-img">
+                    <img src="/Users/stevenmac/Desktop/port/images/image.jpeg" alt="Your Name" class="profile-img">
                 </div>
                 <div class="hero-text">
                     <h1>Welcome to My Portfolio</h1>
@@ -52,7 +60,7 @@
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>I am a passionate developer with a strong foundation in web development and a keen eye for creating elegant solutions. My journey in technology has equipped me with the skills to build robust and user-friendly applications.</p>
+                <p>I'm a data science and machine learning enthusiast currently juggling a B.Tech in Computer Science at VIT Vellore and a BS in Data Science from IIT Madras. I love turning raw data into smart solutions—be it classification models, full-stack dashboards or automation agents that speak plain English. My projects blend applied ML with a dash of creative chaos, from GenAI content generation with RLHF to interactive web apps that make ML more approachable. I code mostly in Python and Java (with coffee on standby) and have led object detection teams using YOLO and PyTorch. When I'm not building models, I help run events with the English Literary Association—because why not mix syntax with storytelling? I believe in clean code, explainable models, reproducible results, and yes, the occasional matplotlib overload</p>
                 <div class="skills">
                     <h3>Skills</h3>
                     <div class="skills-container">
@@ -94,7 +102,7 @@
                                 <span>Docker</span>
                                 <span>AWS</span>
                                 <span>MongoDB</span>
-                                <span>PostgreSQL</span>
+                                <span>Tableau</span>
                             </div>
                         </div>
                     </div>
@@ -116,9 +124,8 @@
                 </div>
                 <div class="experience-content">
                     <ul>
-                        <li>Led development of core features resulting in 40% increase in user engagement</li>
-                        <li>Mentored junior developers and conducted code reviews</li>
-                        <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                        <li>Fine-tuning an LLM to create a Cancer querying chatbot</li>
+                        <li>Used various techniques like PPO, GRPO training to fine-tune the model</li>
                         <li>Collaborated with cross-functional teams to deliver projects on schedule</li>
                     </ul>
                 </div>
@@ -134,7 +141,7 @@
                     <ul>
                         <li>Developed and implemented a deep learning model which worked on object detection for agricultural innovation using drone technologies on Python with an accuracy of 80%.</li>
                         <li>Enhanced problem-solving abilities, improved collaboration and networking skills through practical application by working with diverse teams</li>
-                        <li>Participated in agile development processes and sprint planning</li>
+                        <li>Participated in agile development processes and sprint planning for the project</li>
                     </ul>
                 </div>
             </div>
@@ -142,7 +149,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <div class="section-header">
             <h2>Education</h2>
@@ -150,28 +156,29 @@
         <div class="education-container">
             <div class="education-card">
                 <div class="education-logo">
-                    <img src="path/to/your/college-logo.png" alt="College Logo">
+                    <img src="/Users/stevenmac/Desktop/port/images/IIT_Madras_Logo.png" alt="College Logo">
                 </div>
                 <div class="education-info">
-                    <h3>Your College Name</h3>
-                    <h4>Your Degree</h4>
-                    <p class="duration">2020 - 2024</p>
+                    <h3>Indian Institute of Technology, Madras</h3>
+                    <h4>Bachelor of Science</h4>
+                    <p class="duration">2024 - 2027</p>
                 </div>
             </div>
         </div>
         <div class="education-container">
             <div class="education-card">
                 <div class="education-logo">
-                    <img src="path/to/your/college-logo.png" alt="College Logo">
+                    <img src="/Users/stevenmac/Desktop/port/images/Vellore-Institute-of-Technology-Logo.webp" alt="College Logo">
                 </div>
                 <div class="education-info">
-                    <h3>Your College Name</h3>
-                    <h4>Your Degree</h4>
-                    <p class="duration">2020 - 2024</p>
+                    <h3>Vellore Institute of Technology, Vellore</h3>
+                    <h4>Bachelor of Technology</h4>
+                    <p class="duration">2022 - 2026</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="projects" class="projects">
         <div class="section-header">
@@ -182,28 +189,26 @@
                 <h3>Promptle: Wordle Bot</h3>
                 <p>A Python-based Wordle Bot that solves the Wordle Puzzle by leveraging Prompt Engineering and basic fine-tuning.</p>
                 <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/stevenittileon/Wordle-Bot" target="_blank"><i class="fab fa-github"></i> Code</a>
                 </div>
             </div>
             <div class="project-card">
-                <h3>Project 2</h3>
-                <p>A brief description of your second project and its key features.</p>
+                <h3>F1nflow: Financial Tracker</h3>
+                <p>A modern, user-friendly expense tracking application, built on React, to help manage your finances with ease</p>
                 <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/stevenittileon/F1nflow-Financial-Tracker" target="_blank"><i class="fab fa-github"></i> Code</a>
                 </div>
             </div>
             <div class="project-card">
-                <h3>Project 3</h3>
-                <p>A brief description of your third project and its key features.</p>
+                <h3>SkySight: Object Detection in Drones</h3>
+                <p>Led a team to develop an object detection system using Python, PyTorch, and YOLO for real-time identification of agricultural objects</p>
                 <div class="project-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="https://github.com/stevenittileon/Object-Detection-in-Drones" target="_blank"><i class="fab fa-github"></i> Code</a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="certifications" class="certifications">
         <div class="section-header">
@@ -212,40 +217,40 @@
         <div class="cert-grid">
             <div class="cert-card">
                 <i class="fas fa-certificate"></i>
-                <h3>Certification 1</h3>
-                <p>Issuing Organization</p>
-                <p>Date Earned: Month Year</p>
+                <h3>TensorFlow Developer Certificate</h3>
+                <p>DeepLearning.AI</p>
+                <p>April 2024</p>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/F9TXW8R5CKCF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank" class="animated-button">
+                    <span>View Certificate</span>
+                    <span></span>
+                </a>
             </div>
             <div class="cert-card">
                 <i class="fas fa-certificate"></i>
-                <h3>Certification 2</h3>
-                <p>Issuing Organization</p>
-                <p>Date Earned: Month Year</p>
+                <h3>Data Analytics Certificate</h3>
+                <p>Google</p>
+                <p>December 2023</p>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/FN8L7ZP8WBAE" target="_blank" class="animated-button">
+                    <span>View Certificate</span>
+                    <span></span>
+                </a>
             </div>
         </div>
     </section>
+
 
     <section id="contact" class="contact">
         <div class="section-header">
             <h2>Contact Me</h2>
         </div>
         <div class="contact-content">
-            <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
+            <div class="email-contact">
+                <h3 style="text-align: center;">Feel free to reach out to me at:</h3>
+                <div class="social-links">
+                    <a href="https://github.com/stevenittileon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-itti-leon/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:stevenittileon.email@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" required placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="submit-btn"><span class="text">Send Message</span></button>
-            </form>
-            <div class="social-links">
-                <a href="https://github.com/stevenittileon" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/steven-itti-leon/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your.email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
