@@ -1,0 +1,349 @@
+:root {
+    /* Colors — wheat & olive palette */
+    --bg-main: #fbf9f5;
+    --bg-header: #e2e8d8;
+    --text-primary: #2d3126;
+    --text-secondary: #4a5240;
+    --text-muted: #5c6450;
+    --accent-blue: #5a6b3c;
+    --accent-green: #6a7b4c;
+    --link-color: #5a6b3c;
+    --link-hover: #4a5a30;
+    --card-bg: rgba(255, 255, 255, 0.65);
+    --border-color: rgba(0, 0, 0, 0.06);
+    
+    /* Typography */
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    
+    /* Spacing */
+    --header-height: 64px;
+    --content-max: 900px;
+    --grid-gap: 2rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-main);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Header — Neel Nanda style */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: var(--header-height);
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.site-title:hover {
+    color: var(--link-hover);
+}
+
+.main-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.header-social {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.header-social a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.header-social a:hover {
+    color: var(--link-color);
+}
+
+/* GitHub icon */
+.github-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+.github-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Main content */
+.main-content {
+    position: relative;
+    z-index: 1;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+}
+
+/* Intro section — Jyo Pari style */
+.intro-section {
+    margin-bottom: 3rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 36em;
+    margin: 0 0 0.5rem;
+}
+
+.intro-contact {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.intro-contact a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Section headings */
+.section-heading {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--accent-blue);
+    margin: 0 0 1.5rem;
+}
+
+/* Posts grid — Neel Nanda 3-column style */
+.posts-section {
+    margin-bottom: 3rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--grid-gap);
+}
+
+.post-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.post-date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.post-title {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.35;
+    margin: 0 0 0.75rem;
+}
+
+.post-title a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--link-color);
+}
+
+.post-excerpt {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+}
+
+.read-more {
+    font-size: 0.9rem;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Sections list — Jyo Pari style */
+.sections-overview {
+    margin-top: 3rem;
+}
+
+.sections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.section-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.section-bullet {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.section-item a {
+    color: var(--text-primary);
+    text-decoration: none;
+    flex: 1;
+    min-width: 0;
+}
+
+.section-item a:hover {
+    color: var(--link-color);
+}
+
+.section-tag {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+}
+
+.section-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Page layout for section pages */
+.page-content {
+    margin-bottom: 3rem;
+}
+
+.page-content h1 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+}
+
+.page-content h2 {
+    font-size: 1.2rem;
+    color: var(--accent-blue);
+    margin: 2rem 0 0.75rem;
+}
+
+.page-content p {
+    color: var(--text-secondary);
+}
+
+/* Breadcrumb / back link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .site-header {
+        flex-wrap: wrap;
+        padding: 1rem;
+        height: auto;
+        min-height: var(--header-height);
+    }
+    
+    .main-nav {
+        order: 3;
+        width: 100%;
+        margin-top: 0.5rem;
+        gap: 1.25rem;
+    }
+    
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Main content image */
+.main-image {
+    display: block;
+    max-width: 840px;        
+    width: 100%;
+    height: auto;
+    margin: 0 0 2rem 0;    
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Optional centered variant */
+.main-image.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Slight hover polish (very subtle) */
+.main-image:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
